@@ -1,0 +1,2 @@
+# gogo
+Go pet project
