@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: gogo-postgres
+    environment:
+      POSTGRES_DB: $DB_NAME
+      POSTGRES_USER: $DB_USER
+      POSTGRES_PASSWORD: $DB_PASS
+    ports:
+      - "5432:5432"
+    volumes:
+      - gogo_pgdata:/var/lib/postgresql/data
+
+volumes:
+  gogo_pgdata:

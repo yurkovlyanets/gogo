@@ -1,0 +1,6 @@
+port: 8080
+
+postgresql:
+  dsn: "postgres://postgres:password@localhost:5432/gogo?sslmode=disable"
+  name: "postgres"
+  password: "password"
